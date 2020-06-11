@@ -1,6 +1,7 @@
 import asyncio
 import aiohttp
-from timer import timer
+
+from src.timer import timer
 
 URL = 'https://httpbin.org/uuid'
 

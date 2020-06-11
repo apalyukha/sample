@@ -1,7 +1,8 @@
 import requests
-from timer import timer
+
 from concurrent.futures import ThreadPoolExecutor
 
+from src.timer import timer
 
 URL = 'https://httpbin.org/uuid'
 
