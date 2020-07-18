@@ -12,7 +12,6 @@ class MyScreenshot(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get('https://wallpaperscraft.com/')
-
         driver.save_screenshot('wallpaper.png')
 
     def tearDown(self):
