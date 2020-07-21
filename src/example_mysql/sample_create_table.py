@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 try:
     connect = mysql.connector.connect(host='localhost',
@@ -17,7 +18,7 @@ try:
     result = cursor.execute(mySql_Create_Table_Query)
     print("Laptop Table created successfully ")
 
-except mysql.connector.Error as error:
+except Error as error:
     print("Failed to create table in MySQL: {}".format(error))
 finally:
     if connect.is_connected():
